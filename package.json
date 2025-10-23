@@ -1,0 +1,46 @@
+{
+  "name": "visual-test-suite",
+  "version": "1.0.0",
+  "description": "URL-based visual regression testing suite with Playwright - Configure tests via UI, run automated screenshots, and manage baselines",
+  "private": false,
+  "scripts": {
+    "dev": "next dev -p 3100",
+    "build": "next build",
+    "start": "next start -p 3100",
+    "lint": "eslint",
+    "visual:test": "playwright test --config=playwright.visual.config.ts"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "next": "16.0.0",
+    "pixelmatch": "^6.0.0",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.0",
+    "@playwright/test": "^1.48.0"
+  },
+  "keywords": [
+    "visual-testing",
+    "regression-testing",
+    "playwright",
+    "nextjs",
+    "ui-testing",
+    "screenshot-testing",
+    "baseline-management"
+  ],
+  "author": "Tyrone Ross",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyroneross/visual-test-suite"
+  }
+}
