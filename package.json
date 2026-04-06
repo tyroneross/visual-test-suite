@@ -11,22 +11,25 @@
     "visual:test": "playwright test --config=playwright.visual.config.ts"
   },
   "dependencies": {
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "@prisma/client": "^7.2.0",
     "next": "16.0.0",
     "pixelmatch": "^6.0.0",
-    "pngjs": "^7.0.0"
+    "pngjs": "^7.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "zod": "^4.2.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@playwright/test": "^1.48.0",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.0.0",
-    "@playwright/test": "^1.48.0"
+    "prisma": "^7.2.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   },
   "keywords": [
     "visual-testing",
@@ -38,7 +41,7 @@
     "baseline-management"
   ],
   "author": "Tyrone Ross",
-  "license": "MIT",
+  "license": "FSL-1.1-MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tyroneross/visual-test-suite"
